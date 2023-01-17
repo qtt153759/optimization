@@ -1,0 +1,21 @@
+1. Số cánh đồng thu hoạch mỗi ngày
+2. Khoảng chênh valid = e - s
+3. Có ngày nào trống không
+
+
+Chia type
+
+1. Thu 4 - 7 cánh đồng 1 ngày, range = 4, không có ngày trống
+2. Thu 4 - 7 cánh đồng 1 ngày, range = 7, không có ngày trống
+3. Thu 4 - 7 cánh đồng 1 ngày, range = 4, có ngày trống
+4. Thu 10 cánh đồng 1 ngày, range = 5, không có ngày trống
+
+Small
+m = [10, 20, 35, 50]
+M = [15, 30, 50, 75]
+N = [10, 20, 40, 60]
+
+Big
+m = [20, 30, 40, 50]
+M = [30, 45, 60, 80]
+N = [200, 400, 600, 800]

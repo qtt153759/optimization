@@ -1,0 +1,15 @@
++++++++++++++++++++++++++++
+Loi giai: [0 6 3 10 8 9 7 1 4 2 5]
+Tong quang duong cua loi giai: 526
+Best total cost hien tai: 526
++++++++++++++++++++++++++++
+Loi giai: [0 3 6 10 8 9 7 1 4 2 5]
+Tong quang duong cua loi giai: 531
+Best total cost hien tai: 526
++++++++++++++++++++++++++++
+Loi giai: [0 3 10 8 9 6 7 1 4 2 5]
+Tong quang duong cua loi giai: 436
+Best total cost hien tai: 436
++++++++++++++++++++++++++++
+Loi giai tot nhat: [0 3 10 8 9 6 7 1 4 2 5]
+Best total cost: 436

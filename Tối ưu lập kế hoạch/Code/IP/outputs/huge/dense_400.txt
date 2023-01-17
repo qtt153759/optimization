@@ -1,0 +1,12 @@
+K: 6
+Alpha: 10
+weight: 2987313.14123
+Violation: 0
+timeElapsed: 600000.000000 milliseconds
+
+K: 6
+Alpha: 11
+weight: 3129872.71225
+Violation: 0
+timeElapsed: 600000.000000 milliseconds
+

@@ -1,0 +1,3 @@
+File: data6.txt - Duration: 414 seconds  -  Objective value: 20333.0
+File: data6.txt - Duration: 411 seconds  -  Objective value: 20333.0
+File: data4.txt - Duration: 5 seconds  -  Objective value: 8276.000000000004

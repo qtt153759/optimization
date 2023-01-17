@@ -1,0 +1,7 @@
+Average running time: 130.8244
+Best result: 	Chromosome: [1, 4, 1, 4, 4, 4, 4, 4, 1, 4, 4, 4, 1, 4, 1, 1, 4, 1, 4, 4] 	 Fitness: 639.0	 Freq: 2
+Worst result: 	Chromosome: [1, 4, 1, 4, 4, 4, 4, 4, 1, 4, 4, 4, 1, 4, 1, 1, 4, 1, 4, 4] 	 Fitness: 639.0	 Freq: 2
+Mode result: 	Chromosome: [1, 4, 1, 4, 4, 4, 4, 4, 1, 4, 4, 4, 1, 4, 1, 1, 4, 1, 4, 4] 	 Fitness: 639.0	 Freq: 2
+Average fitness: 63.9
+Standard deviation: 0.0
+Counter({63.9: 2})

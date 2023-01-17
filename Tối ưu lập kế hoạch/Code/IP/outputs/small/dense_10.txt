@@ -1,0 +1,36 @@
+K: 2
+Alpha: 1
+weight: 577.783020
+Violation: 0
+timeElapsed: 131.000000 milliseconds
+
+K: 2
+Alpha: 2
+weight: 505.836674
+Violation: 0
+timeElapsed: 68.000000 milliseconds
+
+K: 3
+Alpha: 1
+weight: 766.498543
+Violation: 0
+timeElapsed: 611.000000 milliseconds
+
+K: 3
+Alpha: 2
+weight: 715.571569
+Violation: 0
+timeElapsed: 701.000000 milliseconds
+
+K: 4
+Alpha: 1
+weight: 884.329111
+Violation: 0
+timeElapsed: 2378.000000 milliseconds
+
+K: 4
+Alpha: 2
+weight: 839.751883
+Violation: 0
+timeElapsed: 2692.000000 milliseconds
+

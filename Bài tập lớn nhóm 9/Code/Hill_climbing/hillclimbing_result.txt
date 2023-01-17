@@ -1,0 +1,6 @@
+File: nl4.txt - Duration: 0 seconds  -  Objective value: 8276
+File: nl6.txt - Duration: 0 seconds  -  Objective value: 21984
+File: nl10.txt - Duration: 1 seconds  -  Objective value: 60705
+File: nl16.txt - Duration: 8 seconds  -  Objective value: 253042
+File: nl12.txt - Duration: 2 seconds  -  Objective value: 106037
+File: nl14.txt - Duration: 7 seconds  -  Objective value: 177397

@@ -1,0 +1,85 @@
+#include <bits/stdc++.h>
+#define ii pair<int, int>
+#define f first
+#define s second
+#define maxn 100005
+#define MOD 1000000007
+using namespace std;
+int n, path[40][40], curPos[40];
+bool inMatch[40][40], hasMatchInRound[40][40];
+int finalResult = INT_MAX, curPath;
+stack<ii> traceMatch, traceResult;
+void solve(int round);
+
+bool checkExistence(int round, int i, int j) {
+    return i != j && !hasMatchInRound[round][i] && !hasMatchInRound[round][j] && !inMatch[i][j];
+}
+
+void calcEachRound(int round, int prevHome, int prevGuest, int match) {
+    if(match == n/2 + 1) {
+        solve(round + 1);
+        return;
+    }
+    int tmpH, tmpG, travelPath;
+    for(int i = prevHome; i <= n; ++ i) {
+        for(int j = (i == prevHome ? prevGuest + 1 : 1); j <= n; ++ j) {
+            travelPath = path[curPos[i]][i] + path[curPos[j]][i];
+            if(checkExistence(round, i, j) && curPath + travelPath < finalResult) {
+                tmpH = curPos[i];
+                tmpG = curPos[j];
+                curPos[i] = i;
+                curPos[j] = i;
+                curPath += travelPath;
+                hasMatchInRound[round][i] = 1;
+                hasMatchInRound[round][j] = 1;
+                inMatch[i][j] = 1;
+                traceMatch.push({i, j});
+                calcEachRound(round, i, j, match + 1);
+                traceMatch.pop();
+                inMatch[i][j] = 0;
+                hasMatchInRound[round][j] = 0;
+                hasMatchInRound[round][i] = 0;
+                curPath -= travelPath;
+                curPos[j] = tmpG;
+                curPos[i] = tmpH;
+            }
+        }
+    }
+}
+
+void solve(int round) {
+    if(round == 2*n - 1) {
+        int fullPath = curPath;
+        for(int i = 1; i <= n; ++ i) fullPath += path[curPos[i]][i];
+        if(fullPath < finalResult) {
+            traceResult = traceMatch;
+            finalResult = fullPath;
+        }
+        return;
+    }
+    calcEachRound(round, 1, 1, 1);
+}
+
+main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    freopen(".inp", "r", stdin);
+    cin >> n;
+    for(int i = 1; i <= n; ++ i) {
+        curPos[i] = i;
+        for(int j = 1; j <= n; ++ j) cin >> path[i][j];
+    }
+    solve(1);
+    for(int i = 1; i <= 2*n-2; ++ i) {
+        cout << "Round " << i << " (Home-Guest): ";
+        for(int j = 1; j <= n/2; ++ j) {
+            if(traceResult.empty()) break;
+            ii u = traceResult.top();
+            traceResult.pop();
+            cout << u.f << "-" << u.s << ' ';
+        }
+        cout << '\n';
+    }
+    cout << finalResult;
+}
